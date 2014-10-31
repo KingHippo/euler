@@ -1,19 +1,15 @@
-function multiples() {
-	
-	var sum = 0;
+function addThreeAndFive() {
 
-	var form = document.forms["numform"];
+  var theForm = document.forms["numform"];
 
-	var num = form.elements["num"];
+  var num = theForm.elements["num"].value
 
+  var sum = 0;
 
-
-	for(var i=0; i<=num; i++){
-		if(i%3==0 || i%5==0) {
-			sum = sum + i;
-		}
-	}
-	return multiples();
+  for(var i=0; i<=num; i++){
+  if (i % 3 === 0 || i % 5 === 0) {
+  sum += i;
+    }
+  }
+document.getElementById('totalSum').innerHTML = "The sum of the multiples of 3 and 5 are " + sum;
 }
-
-
