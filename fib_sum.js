@@ -9,8 +9,6 @@ function fibSum() {
 
     var sum = 0;
 
-    var limit = 4e6;
-
     var temp;
     do {
         if (j % 2 === 0) {
